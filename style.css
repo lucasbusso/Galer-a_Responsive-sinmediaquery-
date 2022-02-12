@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    
+}
+.background__pattern{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #e5e5f7;
+    opacity: 0.257;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ),
+    repeating-linear-gradient( #444cf755, #444cf7 );
+    z-index: -1;
+}
+.gallery{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /*para que las imagenes no se peguen*/
+}
+.gallery__picture{
+    min-width: 200px;
+    flex: 250px;
+    height: 300px;
+}
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
